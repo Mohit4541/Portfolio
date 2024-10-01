@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,8 +20,6 @@
             color: white;
             padding: 15px;
             text-align: center;
-            position: sticky;
-            top: -1px;
         }
 
         nav ul {
@@ -30,17 +27,19 @@
             margin: 0;
             padding: 0;
             display: flex;
-            gap: 30px;
             justify-content: center;
         }
 
-        nav ul li a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
+        nav ul li {
+            margin: 0 15px;
         }
 
-
-
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
 
         nav ul li a:hover {
             background-color: #555;
@@ -160,8 +159,7 @@
             flex-direction: column;
         }
 
-        .contact-form input,
-        .contact-form textarea {
+        .contact-form input, .contact-form textarea {
             padding: 10px;
             margin-bottom: 15px;
             border-radius: 5px;
@@ -192,23 +190,15 @@
             margin-top: 20px;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             .skills ul li {
                 font-size: 1rem;
             }
-
-            nav ul {
-                gap: 20px;
-            }
         }
+
     </style>
 </head>
-
 <body>
 
     <!-- Navigation bar -->
@@ -216,8 +206,7 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#personal-info">personal-info</a></li>
-            <li><a href="#contect-me">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -225,8 +214,7 @@
     <section class="home" id="home">
         <img src="profile.png" alt="Mohit Madlotiya" class="profile-pic">
         <h1 style="text-decoration: underline;">Mohit Madlotiya</h1>
-        <p>Hello! I am a MERN stack developer with a strong foundation in front-end technologies. I am passionate about
-            building responsive and dynamic websites.</p>
+        <p>Hello! I am a MERN stack developer with a strong foundation in front-end technologies. I am passionate about building responsive and dynamic websites.</p>
     </section>
 
     <!-- Skills Section -->
@@ -244,10 +232,10 @@
         </ul>
     </section>
 
-
+    
 
     <!-- Personal Information Section -->
-    <section class="personal-info" id="personal-info">
+    <section class="personal-info" id="contact">
         <h2>Personal Information</h2>
         <hr>
         <p><strong>Name:</strong> Mohit Madlotiya</p>
@@ -259,7 +247,7 @@
     </section>
 
     <!-- Contact Me Form -->
-    <section class="contact-form" id="contect-me">
+    <section class="contact-form">
         <h2>Contact Me</h2>
         <form action="submit_form.php" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -271,7 +259,7 @@
     <!-- Instagram Button -->
     <div class="instagram-button">
         <a href="https://www.instagram.com/stranger_3854/" target="_blank">
-            <i class="fa-brands fa-instagram"> &nbsp; Follow me on Instagram</i>
+            <i class="fa-brands fa-instagram"> &nbsp; Follow me on Instagram</i> 
         </a>
     </div>
 
@@ -281,5 +269,4 @@
     </footer>
 
 </body>
-
 </html>
