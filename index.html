@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Madlotiya | Personal Portfolio</title>
+    <link rel="shortcut icon" href="favi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar styles */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Home Section */
+        .home {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .home h1 {
+            color: #333;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Skill Section */
+        .skills {
+            background-color: #fff;
+            padding: 30px;
+            margin: 20px auto;
+            text-align: center;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        /* Instagram Button */
+        .instagram-button {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .instagram-button a {
+            text-decoration: none;
+            background-color: #E1306C;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .instagram-button a img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        /* Personal Information */
+        .personal-info {
+            background-color: #fff;
+            padding: 30px;
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .personal-info h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .personal-info p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        /* Contact Me Form */
+        .contact-form {
+            background-color: #fff;
+            padding: 30px;
+            max-width: 900px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .skills ul li {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <img src="profile.png" alt="Mohit Madlotiya" class="profile-pic">
+        <h1 style="text-decoration: underline;">Mohit Madlotiya</h1>
+        <p>Hello! I am a MERN stack developer with a strong foundation in front-end technologies. I am passionate about building responsive and dynamic websites.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <hr>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Tailwind</li>
+            <li>React.js (in progress)</li>
+            <li>Node.js (in progress)</li>
+        </ul>
+    </section>
+
+    
+
+    <!-- Personal Information Section -->
+    <section class="personal-info" id="contact">
+        <h2>Personal Information</h2>
+        <hr>
+        <p><strong>Name:</strong> Mohit Madlotiya</p>
+        <p><strong>Father's Name:</strong> Jakir Hussain</p>
+        <p><strong>Mother's Name:</strong> Sudesh Begum</p>
+        <p><strong>Address:</strong> VPO Ganoh, Teh. Nurpur, District Kangra</p>
+        <p><strong>Contact Number:</strong> 8580983235</p>
+        <p><strong>Email:</strong> akmadlotia123@gmail.com</p>
+    </section>
+
+    <!-- Contact Me Form -->
+    <section class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!-- Instagram Button -->
+    <div class="instagram-button">
+        <a href="https://www.instagram.com/stranger_3854/" target="_blank">
+            <i class="fa-brands fa-instagram"> &nbsp; Follow me on Instagram</i> 
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mohit Madlotiya. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
